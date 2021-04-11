@@ -6,7 +6,7 @@ html, body
 
 body
 {
-background: linear-gradient(#83edf5,#d7a7fa, #d7a7fa);
+background: linear-gradient(#83edf5,#d7a7fa, #efa9f8);
 }
 
 .header
@@ -98,4 +98,8 @@ background: linear-gradient(#83edf5,#d7a7fa, #d7a7fa);
 .message_h4
 {
 	padding-left:5px;color:grey;
+}
+
+#logout_button{
+	background-color: rgb(250, 132, 177);
 }

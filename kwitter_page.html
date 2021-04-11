@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kwitter Room</title>
+	<title>Kwitter Message page</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -13,12 +13,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="kwitter_room.css">
-
+<link rel="stylesheet" type="text/css" href="kwitter_page.css">
 </head>
 <body>
+
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout();">Logout</button>
+	<button id="logout"  onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
 	<center>
 		<h1 class="header">	
 			Kwitter	
@@ -26,18 +26,18 @@
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white" id="user_name"></h3>
-		<div class="form-group input_div_room_page">
-			<label>#Add Room:</label>
-			<input type="text" id="room_name" class="form-control" placeholder="Room Name">
-		</div>
-		<button onclick="addRoom();">#Add Room</button>
-		<h3 class="color_white">#TRENDINGROOMS</h3>
-		<div id="output">
-			
-		</div>
+		<div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Message">
+		<button onclick="send();" >Send</button>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
 </body>
 </html>
